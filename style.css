@@ -24,7 +24,7 @@ a.anchor {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #f1f2f6;
+  background-color: #3f826d;
   overflow: auto;
   /*position: fixed;*/
   /*top:0;*/
@@ -50,63 +50,7 @@ a.anchor {
   width: 100%;
 }
 
-.scrollDown{
-    position:absolute;
-    margin-top: 50px;
-    left:50%;
-    width:40px;
-    height:40px;
-    
-    transform: translateY(-80px) translateX(-50%) rotate(45deg);
-}
 
-.scrollDown span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-bottom: 2px solid black;
-    border-right: 2px solid black;
-    animation: animate 1.5s linear infinite;
-    opacity: 0;
-        
-}
-
-.scrollDown span:nth-child(1){
-    transform: translate(-15px, -15px);
-    animation-delay: 0;
-}
-.scrollDown span:nth-child(2){
-    transform: translate(0, 0);
-    animation-delay: 0.2s;
-}
-.scrollDown span:nth-child(3){
-    transform: translate(15px, 15px);
-    animation-delay: 0.4s;
-}
-
-@keyframes animate{
-    0%{
-        top:-5px;
-        left:-5px;
-        opacity: 0;
-        
-    }
-    25%{
-        top:0;
-        left:0;
-        opacity: 1;
-        
-    }
-    50%,100%{
-        top:5px;
-        left:5px;
-        opacity: 0;
-        
-    }
-}
 
  .logo-image{
     height:40px;
@@ -170,7 +114,7 @@ body, html {
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("img/scuba.JPG");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("img/main.jpg");
 
   /* Set a specific height */
   height: 100%;
@@ -180,6 +124,7 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  
   /*top: 55px;*/
 }
 
@@ -187,20 +132,15 @@ body, html {
 .hero-text {
   text-align: center;
   position: absolute;
-  top:80%;
-  left: 50%;
+  top:40%;
+  left: 70%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: black;
   font-weight: bold;
 
 }
 
-.somImage img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
+
 
 .button {
   padding: 15px 25px;
@@ -224,14 +164,7 @@ body, html {
   transform: translateY(4px);
 }
 
-.som{
-    display:block; margin-left: auto; margin-right: auto; width: 50%; height:400px
-}
-@media screen and (max-width: 800px) {
-    .som{
-        width:100%;
-    }
-}
+
 
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
@@ -315,169 +248,7 @@ body, html {
 }
 
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 800px;
-  position: relative;
-  margin: auto;
-  padding:10px;
-}
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 18px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: -60px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 25px;
-  padding: 8px 12px;
-  position: absolute;
-  top: -30px;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 50px 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-.social .fa {
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-.fa-facebook {
-  background: #3B5998;
-  color: white;
- 
-}
-
-.fa-instagram {
-  background: #125688;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-
-/* Style inputs */
-#book input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-/* Style the submit button */
-#book input[type=submit] {
-  width: 100%;
-  background-color: #0fb9b1;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* Add a background color to the submit button on mouse-over */
-#book input[type=submit]:hover {
-  background-color: #a4b2c1;
-}
-
-div.formContainer {
-  border-radius: 5px;
-  background-color: #778ca3;
-  padding: 20px;
-  width:50%;
-  margin-left: 25%;  
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-    div.formContainer {
-      width:90%;
-      margin-left: 5%;  
-    }
-}
 
 #myBtn5{
      cursor:pointer;
@@ -490,14 +261,7 @@ div.formContainer {
      text-decoration:underline;
 }
 
-.somPress{
-    text-align: center
-}
 
-.somPress button{
-    margin: 10px;
-    width:210px;
-}
 
 /* The Modal (background) */
 .modal {
@@ -602,132 +366,6 @@ div.formContainer {
 	background: white;
 }
 
-/*photobanner*/
-
-.photobanner {
-	height: 285px;
-	width: 14256px;
-  animation-play-state: running;
-  animation: bannermove 30s linear infinite;
-  display: inline-block;
-  position: relative;
-  margin-bottom: 1em;
-}
-
-.photobanner-wrap:hover .photobanner {
-  animation-play-state: paused;
-}
-
-
-/*keyframe animations*/
-
-@keyframes bannermove {
- 0% {
-    transform: translate(0px,0);
- }
- 100% {
-    transform: translate(-25%,0);
- }
-
-}
-
-.long-photo{
-  display: inline-block;
-  height: 285px;
-  margin: 0 1em 1em 0;
-  position: relative;
-  width: 695px;
-}
-
-.small-photo{
-  display: inline-block;
-  height: 285px;
-  margin: 0 1em 1em 0;
-  position: relative;
-  width: 305px;
-}
-
-span.text-content {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 285px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 695px;
-}
-
-span.text-content span, span.text-content-small span {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-
-span.text-content {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 400px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 695px;
-  opacity: 0;
-}
-
-span.text-content-small {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 400px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 305px;
-  opacity: 0;
-}
-
-.long-photo:hover span.text-content, .small-photo:hover span.text-content-small {
-  opacity: 1;
-}
-
-span.text-content {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 400px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 695px;
-  opacity: 0;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  transition: opacity 500ms;
-}
-
-span.text-content-small {
-  background: rgba(0,0,0,0.5);
-  color: white;
-  cursor: pointer;
-  display: table;
-  height: 400px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 305px;
-  opacity: 0;
-  -webkit-transition: opacity 500ms;
-  -moz-transition: opacity 500ms;
-  -o-transition: opacity 500ms;
-  transition: opacity 500ms;
-}
 
 
 /* The actual timeline (the vertical ruler) */
@@ -765,7 +403,7 @@ span.text-content-small {
   height: 25px;
   right: -17px;
   background-color: white;
-  border: 4px solid #FF9F55;
+  border: 4px solid #3f826d;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -853,4 +491,99 @@ span.text-content-small {
   .timeright {
   left: 0%;
   }
+}
+
+.colagecontainer {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    grid-gap: 5px;
+    grid-auto-flow: dense;
+}
+.colagecontainer img {
+	width: 100%;
+	height: 100%;
+}
+.horizontal{
+    grid-column: span 2;
+}
+.vertical {
+    grid-row: span 2;
+}
+.big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.hcontainer{
+  width: 1200px;
+  margin: 200px auto;
+}
+
+.htimeline {
+	width:80%;
+	height: 20px;
+	list-style: none;
+	text-align: justify;
+	margin: 80px auto;
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(45%, rgba(255,255,255,0)), color-stop(51%, rgba(191,128,11,1)), color-stop(57%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,0)));
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 45%, rgba(63,130,109,1) 51%, rgba(255,255,255,0) 57%, rgba(255,255,255,0) 100%);
+}
+
+.htimeline:after {
+    display: inline-block;
+    content: "";
+    width: 100%;
+}
+
+
+.htimeline li {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: #3f826d;
+	text-align: center;
+	line-height: 1.2;
+	position: relative;
+	border-radius: 50%;
+}
+.htimeline li:before {
+	display: inline-block;
+	content: attr(data-year);
+	font-size: 26px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.htimeline li:nth-child(odd):before {
+	top: -40px;
+}
+.htimeline li:nth-child(even):before {
+	bottom: -40px;
+}
+
+.htimeline li:after {
+	display: inline-block;
+	content: attr(data-text);
+	font-size: 16px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+    width:200px;
+}
+
+.htimeline li:nth-child(odd):after {
+	bottom: 0;
+	margin-bottom: -10px;
+	transform: translate(-50%, 100%);
+}
+.htimeline li:nth-child(even):after {
+	top: 0;
+	margin-top: -10px;
+	transform: translate(-50%, -100%);
+}
+
+
+
 }
