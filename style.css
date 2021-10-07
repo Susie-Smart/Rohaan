@@ -26,8 +26,8 @@ a.anchor {
 .topnav {
   background-color: #F7F7FF;
   overflow: auto;
-  /*position: fixed;*/
-  /*top:0;*/
+  position: fixed;
+  top:0;
   width:100%;
   max-width: 100%;
   z-index: 9998;
