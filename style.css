@@ -366,6 +366,7 @@ body, html {
 	overflow: hidden;
 	margin: 50px auto;
 	background: white;
+    
 }
 
 
@@ -375,7 +376,8 @@ body, html {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  color:black;
+  color:white;
+    
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -395,8 +397,10 @@ body, html {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
+
   width: 50%;
-    z-index: 1;
+  z-index: 1;
+  
 }
 
 /* The circles on the timeline */
@@ -459,7 +463,8 @@ body, html {
 /* The actual content */
 .timecontent {
   padding: 20px 30px;
-  background-color: white;
+     background-color: #545E75;
+
   position: relative;
   border-radius: 6px;
 }
