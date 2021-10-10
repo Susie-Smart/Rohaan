@@ -116,7 +116,7 @@ body, html {
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("img/main.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("img/main.png");
 
   /* Set a specific height */
   height: 100%;
@@ -375,6 +375,7 @@ body, html {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  color:black;
 }
 
 /* The actual timeline (the vertical ruler) */
