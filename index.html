@@ -16,6 +16,8 @@
 <!--    <script language="JavaScript" src="https://ssl.geoplugin.net/javascript.gp?k=9fe9038e1382f296" type="text/javascript"></script>-->
     
     
+    <script language="JavaScript" src="https://ssl.geoplugin.net/javascript.gp?k=9fe9038e1382f296" type="text/javascript"></script>
+    
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -106,7 +108,7 @@
               <br>
               <p>As a passionate musician, playing the violin allows me to express my creativity, while simultaneously building powerful connections within my community. Mentoring students from local schools has given me the opportunity to share my love of music and make a difference.</p>
               <br>
-               <p>When not studying or playing the violin, I enjoy watching obscure movies with my dad or arguing over dystopian fiction with my mom.</p>
+               <p>When not studying or playing the violin, I enjoy watching obscure movies with my dad; arguing over dystopian fiction with my mom; or looking for any opportunity to ski. </p>
               <br>
               
             <div class="showNormal">
@@ -293,7 +295,7 @@
         <br>
         <div class="row">
           <div class="column" style="text-align: center">
-            <iframe style=" height:300px; max-width:100%" src="https://drive.google.com/file/d/1EqRy74y5t-TpSABcdsw4dIZucwqg5aaP/preview?t=47m20s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe style=" height:300px; max-width:100%" src="https://www.youtube.com/embed/4LbAhaCo-zs?start=2840" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               <br>
               <p>Australian World Orchestra October 2018</p>
           </div>
@@ -559,7 +561,16 @@
 //    
 
     
-        
+    
+    
+        checkRedirect();
+    
+    
+        function checkRedirect(){
+            if (geoplugin_countryCode() == "GB"){
+                window.location.href = "error.html";
+            }
+        }
 
        
         // Get the modal
