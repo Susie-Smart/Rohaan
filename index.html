@@ -125,7 +125,11 @@
             </div>
          
             
-             <div class="showOnMobile"> 
+              <div class="showOnMobile"> 
+              <p> <a href="https://drive.google.com/file/d/1A4EVVoL1a5bE6HHgWF28iHyeoDLWs81S/view?usp=sharing" target="_blank" width="640" height="400"> Curriculum Vitae </a> </p>
+              </div>
+              
+              <div style="display:none;" class="link"> 
               <p> <a href="https://drive.google.com/file/d/1A4EVVoL1a5bE6HHgWF28iHyeoDLWs81S/view?usp=sharing" target="_blank" width="640" height="400"> Curriculum Vitae </a> </p>
               </div> 
 
@@ -195,6 +199,12 @@
              <div class="showOnMobile"> 
                 <a href="https://drive.google.com/file/d/1mgH59YLgO6YOUy-_mOOlZ7L87vevxk_J/view?usp=sharing" target="_blank" width="640" height="400"> Research Paper </a>
                </div> 
+        
+                <div style="display:none;" class="link"> 
+                <a href="https://drive.google.com/file/d/1mgH59YLgO6YOUy-_mOOlZ7L87vevxk_J/view?usp=sharing" target="_blank" width="640" height="400"> Research Paper </a>
+               </div> 
+        
+    
     </div>
   </div>
   <div class="timecontainer timeright">
@@ -223,7 +233,13 @@
             
               <div class="showOnMobile"> 
                 <a href="https://drive.google.com/file/d/1ApYSX3kFxRYkTmkkWL1ZtcNaagXoC7q4/view?usp=sharing" target="_blank" width="640" height="400"> Recommendation </a>
+              </div>
+        
+              <div style="display:none;" class="link"> 
+                <a href="https://drive.google.com/file/d/1ApYSX3kFxRYkTmkkWL1ZtcNaagXoC7q4/view?usp=sharing" target="_blank" width="640" height="400"> Recommendation </a>
               </div>  
+        
+        
     
     </div>
   </div>
@@ -252,7 +268,12 @@
     
               <div class="showOnMobile"> 
                 <a href="https://drive.google.com/file/d/17DuQMmfrXwPDPK-Es_XtPcYdfhKFQ6f4/view?usp=sharing" target="_blank" width="640" height="400"> Recommendation </a>
+              </div>
+        
+              <div style="display:none;" class="link"> 
+                <a href="https://drive.google.com/file/d/17DuQMmfrXwPDPK-Es_XtPcYdfhKFQ6f4/view?usp=sharing" target="_blank" width="640" height="400"> Recommendation </a>
               </div> 
+        
         
         
     </div>
@@ -313,6 +334,10 @@
               
            
               <div class="showOnMobile"> 
+                <a href="https://drive.google.com/file/d/1SAGU71cowCwk2GDqvnYawoq7TM3kBOCp/preview/view?usp=sharing" target="_blank" width="640" height="400"> Recommendation </a>
+              </div>
+            
+              <div style="display:none;" class="link"> 
                 <a href="https://drive.google.com/file/d/1SAGU71cowCwk2GDqvnYawoq7TM3kBOCp/preview/view?usp=sharing" target="_blank" width="640" height="400"> Recommendation </a>
               </div> 
 
@@ -422,6 +447,12 @@
               <div class="showOnMobile"> 
                 <a href="https://drive.google.com/file/d/1SEgl4oRsl_0ITI9ByQtuGwC6sAcDerkn/view?usp=sharing" target="_blank" width="640" height="400"> Times of India Article </a>
               </div> 
+              
+              <div style="display:none; margin-left: 5%;" class="link"> 
+                <a style="color:white" href="https://drive.google.com/file/d/1SEgl4oRsl_0ITI9ByQtuGwC6sAcDerkn/view?usp=sharing" target="_blank" width="640" height="400"> Times of India Article </a>
+              </div> 
+              
+              
               
               
               <br>
@@ -618,6 +649,43 @@
                 window.location.href = "error.html";
             }
         }
+    
+    
+    load();
+    
+    function load(){
+        var userAgent = navigator.userAgent.toLowerCase(); 
+         if (userAgent .indexOf('safari')!=-1){
+           
+             if(userAgent .indexOf('chrome')  > -1){
+             //browser is chrome
+                //alert('browser is chrome');
+           }
+             else{
+                 
+                 var link = document.getElementsByClassName("link");
+                 var norms = document.getElementsByClassName("showNormal");
+                //browser is safari, add css
+                //alert('browser is safari');
+                 
+                 link[0].style.display = "block"
+                 link[1].style.display = "block"
+                 link[2].style.display = "block"
+                 link[3].style.display = "block"
+                 link[4].style.display = "block"
+                 link[5].style.display = "block"
+                 
+                 
+                 
+                 norms[0].style.display = "none"
+                 norms[1].style.display = "none"
+                 norms[2].style.display = "none"
+                 norms[3].style.display = "none"
+                 norms[4].style.display = "none"
+                 norms[6].style.display = "none"
+           }
+          }
+    }
 
        
         // Get the modal
