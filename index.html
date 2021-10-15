@@ -304,7 +304,7 @@
                     <div class="modal-content">
                         <span class="close">&times;</span>
                             <object style="width:100%; height:80%" data="letter.pdf" type="application/pdf">
-                                <iframe src="https://drive.google.com/file/d/1SAGU71cowCwk2GDqvnYawoq7TM3kBOCp/preview" width="640" height="480"></iframe>
+                                <iframe src="https://drive.google.com/file/d/1SAGU71cowCwk2GDqvnYawoq7TM3kBOCp/preview/preview" width="640" height="480"></iframe>
                             </object>
                     </div>
                 </div>
@@ -313,7 +313,7 @@
               
            
               <div class="showOnMobile"> 
-                <a href="https://drive.google.com/file/d/1SAGU71cowCwk2GDqvnYawoq7TM3kBOCp/view?usp=sharing" target="_blank" width="640" height="400"> Recommendation </a>
+                <a href="https://drive.google.com/file/d/1SAGU71cowCwk2GDqvnYawoq7TM3kBOCp/preview/view?usp=sharing" target="_blank" width="640" height="400"> Recommendation </a>
               </div> 
 
         </div>
@@ -405,6 +405,25 @@
                   I set up a unique program to teach the violin to the students of the Laxmi Nagar school, through an NGO called Akanksha.  First, I ran a fund raiser for violins; then when covid struck, I helped the families of these students, with essentials and medicines.  Later when school reopened (and was virtual due to covid) I lead their Digital Divide program to raise funds and procure 280 tablets for the school. I created content for the students in the form of a career talk series - helping them to have exposure to different careers.  Finally, I have started a small investment fund, which I am managing, and the corpus will go towards continued music lessons for the students. 
               </p>
               <br>
+            <div class="showNormal">
+              <button id="myBtn6" Style="margin-left: 5%; width:200px">Times of India Article</button>
+                <div id="myModal6" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                            <object style="width:100%; height:80%" data="press.pdf" type="application/pdf">
+                                <iframe src="https://drive.google.com/file/d/1SEgl4oRsl_0ITI9ByQtuGwC6sAcDerkn/preview" width="640" height="480"></iframe>
+                            </object>
+                    </div>
+                </div>
+                
+            </div>
+        
+    
+              <div class="showOnMobile"> 
+                <a href="https://drive.google.com/file/d/1SEgl4oRsl_0ITI9ByQtuGwC6sAcDerkn/view?usp=sharing" target="_blank" width="640" height="400"> Times of India Article </a>
+              </div> 
+              
+              
               <br>
               <br>
               <img src="img/tablet.PNG" alt="Image of Rohaan Bhojwani" style ="width: 80%; margin-left: 10%;">
@@ -413,8 +432,10 @@
             <div class="TwoColumn" style="text-align: justify">
               
                   <img src="img/paper.png" alt="Image of Rohaan Bhojwani" style ="width: 80%; margin-left: 10%;">
+                
               
               <br>
+              <p style="margin-left: 10%;">The Economic Times, June 28 2021</p> 
 
           </div>
              
@@ -735,6 +756,32 @@
           }
         }
         
+        
+                                // Get the modal
+        var modal6 = document.getElementById("myModal6");
+
+        // Get the button that opens the modal
+        var btn6 = document.getElementById("myBtn6");
+    
+        // Get the <span> element that closes the modal
+        var span6 = document.getElementsByClassName("close")[5];
+
+        // When the user clicks the button, open the modal 
+        btn6.onclick = function() {
+          modal6.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span6.onclick = function() {
+          modal6.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal6) {
+            modal6.style.display = "none";
+          }
+        }
       
     
 </script>
