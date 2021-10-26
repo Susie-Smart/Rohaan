@@ -155,7 +155,7 @@
             <br>
             <h1 style="margin-top: 20px; color:white">Why Economics?</h1>
         </div>
-        
+    
         
 <div class="timeline">
   <div class="timecontainer timeleft">
@@ -163,6 +163,30 @@
       <h2>AUGUST 2021</h2>
         <h3>ECONOMIC THINK TANK INTERN - ERNST AND YOUNG, MUMBAI (3 weeks)</h3>
       <p>Learnt the basics of macro fiscal policy and the structure of Indian Economy. Wrote a brief analysis on the impact of COVID on all of India's sectors.</p>
+        
+        <br>
+        
+         
+      <div class="showNormal">
+              <button id="myBtn7" Style="margin-left: 0%; width:150px">Recommendation</button>
+                <div id="myModal7" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                            <object style="width:100%; height:80%" data="eny.pdf" type="application/pdf">
+                                <iframe src="https://drive.google.com/file/d/1_wgBcRBPF83fkyv3gXAHmcmSVehw1M1Z/preview" width="640" height="480"></iframe>
+                            </object>
+                    </div>
+                </div>
+                
+            </div>
+           
+             <div class="showOnMobile"> 
+                <a href="https://drive.google.com/file/d/1_wgBcRBPF83fkyv3gXAHmcmSVehw1M1Z/view?usp=sharing" target="_blank" width="640" height="400"> Recommendation </a>
+               </div> 
+        
+                <div style="display:none;" class="link"> 
+                <a href="https://drive.google.com/file/d/1_wgBcRBPF83fkyv3gXAHmcmSVehw1M1Z/view?usp=sharing" target="_blank" width="640" height="400"> Recommendation </a>
+               </div> 
     </div>
   </div>
   <div class="timecontainer timeright">
@@ -675,6 +699,7 @@
                  link[3].style.display = "block"
                  link[4].style.display = "block"
                  link[5].style.display = "block"
+                 link[6].style.display = "block"
                  
                  
                  
@@ -683,7 +708,8 @@
                  norms[2].style.display = "none"
                  norms[3].style.display = "none"
                  norms[4].style.display = "none"
-                 norms[6].style.display = "none"
+                 norms[5].style.display = "none"
+                 norms[7].style.display = "none"
            }
           }
     }
@@ -715,6 +741,35 @@
           }
         }
         
+        
+                                        // Get the modal
+        var modal7 = document.getElementById("myModal7");
+
+        // Get the button that opens the modal
+        var btn7 = document.getElementById("myBtn7");
+    
+        // Get the <span> element that closes the modal
+        var span7 = document.getElementsByClassName("close")[1];
+
+        // When the user clicks the button, open the modal 
+        btn7.onclick = function() {
+          modal7.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span7.onclick = function() {
+          modal7.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal7) {
+            modal7.style.display = "none";
+          }
+        }
+        
+        
+        
         // Get the modal
         var modal2 = document.getElementById("myModal2");
 
@@ -722,7 +777,7 @@
         var btn2 = document.getElementById("myBtn2");
     
         // Get the <span> element that closes the modal
-        var span2 = document.getElementsByClassName("close")[1];
+        var span2 = document.getElementsByClassName("close")[2];
 
         // When the user clicks the button, open the modal 
         btn2.onclick = function() {
@@ -750,7 +805,7 @@
         var btn3 = document.getElementById("myBtn3");
     
         // Get the <span> element that closes the modal
-        var span3 = document.getElementsByClassName("close")[2];
+        var span3 = document.getElementsByClassName("close")[3];
 
         // When the user clicks the button, open the modal 
         btn3.onclick = function() {
@@ -777,7 +832,7 @@
         var btn5 = document.getElementById("myBtn5");
     
         // Get the <span> element that closes the modal
-        var span5 = document.getElementsByClassName("close")[3];
+        var span5 = document.getElementsByClassName("close")[4];
 
         // When the user clicks the button, open the modal 
         btn5.onclick = function() {
@@ -806,7 +861,7 @@
         var btn4 = document.getElementById("myBtn4");
     
         // Get the <span> element that closes the modal
-        var span4 = document.getElementsByClassName("close")[4];
+        var span4 = document.getElementsByClassName("close")[5];
 
         // When the user clicks the button, open the modal 
         btn4.onclick = function() {
@@ -833,7 +888,7 @@
         var btn6 = document.getElementById("myBtn6");
     
         // Get the <span> element that closes the modal
-        var span6 = document.getElementsByClassName("close")[5];
+        var span6 = document.getElementsByClassName("close")[6];
 
         // When the user clicks the button, open the modal 
         btn6.onclick = function() {
